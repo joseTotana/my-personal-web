@@ -1,0 +1,25 @@
+@import '../../utils/variables.scss';
+
+.lang-selector {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+
+    a {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 2px;
+        img {
+            height: 24px;
+            width: 24px;
+            margin-right: 2px;
+            margin-left: 2px;
+        }
+    }
+
+    .selected {
+        border: 1px solid $color-jm-white;
+    }
+}

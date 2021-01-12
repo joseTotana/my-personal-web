@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import { Home, About, Portfolio, Contact } from "./pages";
+import i18n from "./i18n";
+import { withTranslation } from "react-i18next";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Header, NavMenu, Footer } from "./components";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const currentLanguage = i18n.language;
+  const { t } = useTranslation();
+  const props = { translate: t, changeLanguage, currentLanguage };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<h1>Loading</h1>}>
+      <Header changeLanguage={changeLanguage} currentLanguage={currentLanguage} />
+      <NavMenu translate={t} />
+      <Router>
+        <Switch>
+          <Route path="/" exact render={() => <Home {...props} />} />
+          <Route path="/about" render={() => <About {...props} />} />
+          <Route path="/portfolio" render={() => <Portfolio {...props} />} />
+          <Route path="/contact" render={() => <Contact {...props} />} />
+        </Switch>
+      </Router>
+      <Footer />
+    </Suspense>
   );
 }
 
-export default App;
+export default withTranslation()(App);

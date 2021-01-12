@@ -1,0 +1,50 @@
+{
+  "home": {
+    "header_menu": {
+      "home": "Home",
+      "about_me": "About me",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "typing_animation": {
+      "welcome": "Welcome to my personal web.",
+      "name": "My name is Jose Martinez.",
+      "about_me": "I'm a software developer."
+    }
+  },
+  "about_me": {
+    "my_story": "My story",
+    "my_story_p1": "My name is Jose Martinez, I'm 37 and I'm a software developer.",
+    "my_story_p2": "I'm working as a developer since 2007. I've worked for different companies, including large firms such as Capgemini. Besides, in 2019 I moved to UK to join AND Digital, company I'm working for since then.",
+    "my_story_p3": "Then, due to current travel restrictions, I would like to move back to Spain and work remotely from Murcia, my home town.",
+    "my_skills": "My skills",
+    "my_skills_p1": "I'm a full-stack programmer with a great knowledge of consulting and software development, especially focused on web and backend, with extensive experience in .Net and React. Also, in the last months I'm learning kotlin/android, platform in which I've already published 3 apps.",
+    "check_my_cv": "CHECK MY CV",
+    "my_linkedin": "LINKEDIN JOSE MARTINEZ"
+  },
+  "portfolio": {
+    "title": "PORTFOLIO",
+    "description": "These are some of my personal projects",
+    "cardWeather": {
+      "desc": "Weather forecast app"
+    },
+    "cardBusiness": {
+      "desc": "'Yellow pages' app"
+    },
+    "cardTheEdit": {
+      "desc": "The Edit shop webview app"
+    }
+  },
+  "contact": {
+    "header": "GET IN TOUCH",
+    "description": "Please, fill out the form and we will be in touch with lightening speed",
+    "form": {
+      "name": "name",
+      "email": "email",
+      "subject": "subject",
+      "message": "message",
+      "button": "Send"
+    },
+    "prefer": "If you prefer, you can also find me on"
+  }
+}
