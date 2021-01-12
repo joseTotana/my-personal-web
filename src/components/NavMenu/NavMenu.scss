@@ -1,0 +1,79 @@
+@import '../../utils/variables.scss';
+
+nav {
+    display: flex;
+    justify-content: flex;
+    min-height: 10vh;
+    align-items: center;
+}
+
+.mylogo {
+    height: 40px;
+    width: auto;
+}
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-links li {
+    list-style-type: none;
+    margin-right: 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li:hover {
+    border-bottom: 1px solid;
+}
+
+.burger-menu-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    .burger-menu {
+        display: none;
+        cursor: pointer;
+        background-color: black;
+    }
+}
+
+@media all and (max-width: $large-mobile) {
+    .nav-links {
+        position: absolute;
+        display: block;
+        top: 10vh;
+        left: 0;
+        padding: 20px;
+        width: 50%;
+        transform: translateX(-500px);
+        transition: 0.5s ease-in-out;
+        background-color: black;
+    }
+
+    .nav-links li {
+        padding: 20px;
+        border-bottom: 1px solid;
+    }
+
+    .nav-links li:last-of-type {
+        border-bottom: 0;
+    }
+
+    .burger-menu-container {
+        .burger-menu {
+            display: block;
+            background-color: black;
+        }
+    }
+
+    .nav-links li:hover {
+        border-bottom: 0;
+    }
+}

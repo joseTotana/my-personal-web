@@ -1,0 +1,21 @@
+@import './utils/variables.scss';
+
+html {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 1%;
+    box-sizing: border-box;
+    font-family: Radnika, Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+    color: $color-jm-white;
+    background: $color-jm-blue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}

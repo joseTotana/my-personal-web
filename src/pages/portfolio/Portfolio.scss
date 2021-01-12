@@ -1,0 +1,60 @@
+@import '../../utils/variables.scss';
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2.5rem;
+
+    .portfolio-description {
+        margin: 5%;
+    }
+
+    .portfolio-cards-section {
+        background-color: white;
+        color: black;
+        display: flex;
+
+        @media all and (max-width: $large-mobile) {
+            flex-direction: column;
+            width: 80%;
+        }
+
+        .portfolio-card-container {
+            flex-basis: 33%;
+            flex-shrink: 1;
+
+            min-width: 200px;
+            cursor: url('../../assets/my_cursor.png'), auto !important;
+            text-decoration: none;
+
+            .portfolio-card-link {
+                cursor: unset;
+                text-decoration: none;
+                color: $color-jm-blue;
+                font-weight: bold;
+            }
+
+            .blue-pointer {
+                cursor: url('../../assets/my_cursor_blue.png'), auto;
+            }
+            .portfolio-card-image {
+                width: 100%;
+                height: auto;
+            }
+            .portfolio-card-caption {
+                height: 0px;
+                margin-bottom: 3px;
+                transition: all 0.2s linear 0s;
+                overflow: hidden;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+        }
+
+        .portfolio-card-container:hover .portfolio-card-caption {
+            height: 78px;
+        }
+    }
+}

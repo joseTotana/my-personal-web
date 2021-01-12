@@ -1,0 +1,92 @@
+@import '../../utils/variables.scss';
+
+.contact-section {
+    padding-bottom: 2.5rem;
+    .contact-form-container {
+        display: flex;
+        padding: 2%;
+        border-bottom-width: 1px !important;
+        border-bottom-color: #e0e0e0 !important;
+        border-bottom-style: solid !important;
+
+        @media all and (max-width: $large-mobile) {
+            flex-direction: column;
+        }
+
+        .contact-section-text {
+            @media all and (max-width: $large-mobile) {
+                margin: 2%;
+            }
+        }
+        .contact-section-form {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 50%;
+            margin-left: 5%;
+            margin-right: 5%;
+
+            @media all and (max-width: $large-mobile) {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            input {
+                border: 1px solid #dfdfdf;
+                letter-spacing: 1px;
+                font-size: 12px;
+                padding: 8px 15px;
+                width: 70%;
+                margin: 0 0 20px 0;
+                max-width: 100%;
+                resize: none;
+
+                @media all and (max-width: $large-mobile) {
+                    width: 100%;
+                }
+            }
+
+            textarea {
+                border: 1px solid #dfdfdf;
+                letter-spacing: 1px;
+                font-size: 12px;
+                padding: 8px 15px;
+                width: 70%;
+                margin: 0 0 20px 0;
+                max-width: 100%;
+                resize: none;
+                min-height: 102px;
+
+                @media all and (max-width: $large-mobile) {
+                    width: 100%;
+                }
+            }
+
+            .submit-button {
+                width: auto;
+            }
+
+            .contact-section-form-input {
+                margin: 2%;
+                display: flex;
+            }
+        }
+    }
+
+    .contact-other-container {
+        padding: 2%;
+        display: flex;
+        align-items: center;
+
+        .my-cv-button {
+            margin-left: 2%;
+        }
+
+        img {
+            height: 40px;
+            width: auto;
+            margin-left: 7%;
+        }
+    }
+}
