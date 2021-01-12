@@ -2,12 +2,33 @@
 
 .about-page {
     padding-bottom: 2.5rem;
+
+    h1 {
+        margin-top: 0;
+        font-weight: $header-font-weight;
+        font-size: $header-font-size-desktop;
+    }
+
+    p {
+        font-size: $text-font-size-desktop;
+    }
+
+    @media all and (max-width: $large-mobile) {
+        h1 {
+            font-size: $header-font-size-mobile;
+        }
+        p {
+            font-size: $text-font-size-mobile;
+        }
+    }
     .my-story {
         display: flex;
         margin: 3%;
+        padding-bottom: 3%;
         border-bottom-width: 1px !important;
         border-bottom-color: #e0e0e0 !important;
         border-bottom-style: solid !important;
+        text-align: justify;
 
         @media all and (max-width: $large-mobile) {
             flex-direction: column;
@@ -26,6 +47,8 @@
 
         .my-story-right {
             margin-block-start: 0;
+            padding-right: 15%;
+            padding-left: 15%;
         }
     }
 

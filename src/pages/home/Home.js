@@ -10,7 +10,7 @@ const Home = (props) => {
 
   return (
     <section className="home-section">
-      <div className="hello-text">HOLA</div>
+      <div className="hello-text">HOLA!</div>
       <TypingAnimation translate={translate} />
     </section>
   );
