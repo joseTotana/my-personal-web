@@ -1,5 +1,6 @@
 import React from "react";
 import myFoto from "../../assets/myfoto.jpg";
+import codingImage from "../../assets/coding.jpg";
 import "./About.scss";
 import SkillsCard from "./Components/SkillsCard";
 import { dotNet, web, android } from "../../utils/constants";
@@ -24,8 +25,13 @@ const About = (props) => {
         </div>
       </section>
       <section className="my-skills">
-        <h1>{translate("about_me.my_skills")}</h1>
-        <p>{translate("about_me.my_skills_p1")}</p>
+        <div className="my-skills-left">
+          <h1>{translate("about_me.my_skills")}</h1>
+          <p>{translate("about_me.my_skills_p1")}</p>
+        </div>
+        <div className="my-skills-right">
+          <img src={codingImage} alt="My Foto"></img>
+        </div>
       </section>
       <section className="skills-cards">
         <SkillsCard type={web} />

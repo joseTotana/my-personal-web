@@ -21,7 +21,11 @@ const SkillsCard = ({ type }) => {
   }
   return (
     <div className="skills-card">
-      <img className="skills-card-icon" src={icon} alt="Skill Icon" />
+      <img
+        className={`skills-card-icon ${type === dotNet ? "skills-card-techs-dotnet" : ""}`}
+        src={icon}
+        alt="Skill Icon"
+      />
       <div className="skills-card-title">{type}</div>
       <div className="skills-card-techs">{techs}</div>
     </div>

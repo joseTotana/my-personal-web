@@ -38,7 +38,7 @@ const Contact = ({ translate }) => {
       <section className="contact-form-container">
         <section className="contact-section-text">
           <h1>{translate("contact.header")}</h1>
-          <div>{translate("contact.description")}</div>
+          <p>{translate("contact.description")}</p>
         </section>
         <section className="contact-section-form">
           <form className="contact-section-form-tag" onSubmit={handleSubmit}>
@@ -46,6 +46,7 @@ const Contact = ({ translate }) => {
               <input
                 type="text"
                 placeholder={translate("contact.form.name")}
+                required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -54,6 +55,7 @@ const Contact = ({ translate }) => {
               <input
                 type="email"
                 placeholder={translate("contact.form.email")}
+                required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -62,6 +64,7 @@ const Contact = ({ translate }) => {
               <input
                 type="text"
                 placeholder={translate("contact.form.subject")}
+                required
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
               />
@@ -71,6 +74,7 @@ const Contact = ({ translate }) => {
                 name="your-message"
                 cols="40"
                 rows="2"
+                required
                 aria-invalid="false"
                 placeholder={translate("contact.form.message")}
                 value={message}
@@ -87,7 +91,7 @@ const Contact = ({ translate }) => {
         </section>
       </section>
       <section className="contact-other-container">
-        <div>{translate("contact.prefer")}</div>
+        <p>{translate("contact.prefer")}</p>
 
         <a className="my-cv-button" href={linkedinProfile} target="_blank" rel="noreferrer">
           <img src={LinkedinLogo} alt="Linkedin Logo" />

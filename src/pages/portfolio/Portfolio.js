@@ -9,7 +9,7 @@ const Portfolio = ({ translate }) => {
     <section className="portfolio-section">
       <h1>{translate("portfolio.title")}</h1>
 
-      <div className="portfolio-description">{translate("portfolio.description")}</div>
+      <p className="portfolio-description">{translate("portfolio.description")}</p>
       <section className="portfolio-cards-section">
         <PortfolioCard translate={translate} cardName={weatherApp} />
         <PortfolioCard translate={translate} cardName={businessApp} />
