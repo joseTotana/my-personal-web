@@ -1,4 +1,5 @@
 export const linkedinProfile = "https://www.linkedin.com/in/josemartinezdeveloper/";
+export const githubProfile = "https://github.com/joseMartinezDev";
 export const contactMail = "contact@josemartinezdev.com";
 
 export const dotNet = ".Net";

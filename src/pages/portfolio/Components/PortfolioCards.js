@@ -41,7 +41,7 @@ const PortfolioCards = ({ translate, cardName }) => {
     <article className="portfolio-card-container">
       <a className="portfolio-card-link" target="_blank" rel="noreferrer" href={card_link}>
         <Figure className={classNameBluePointer}>
-          <Figure.Image className="portfolio-card-image" alt="171x180" src={card_icon} />
+          <Figure.Image className="portfolio-card-image" alt={cardName} src={card_icon} />
           <Figure.Caption className="portfolio-card-caption">
             {translate(card_description.concat("desc"))}
           </Figure.Caption>

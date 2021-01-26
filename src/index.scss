@@ -27,4 +27,10 @@ body {
     p {
         font-size: $text-font-size-desktop;
     }
+    a,
+    u {
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+    }
 }

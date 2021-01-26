@@ -27,7 +27,7 @@ function App() {
           <Route path="/contact" render={() => <Contact {...props} />} />
         </Switch>
       </Router>
-      <Footer />
+      <Footer {...props} />
     </Suspense>
   );
 }

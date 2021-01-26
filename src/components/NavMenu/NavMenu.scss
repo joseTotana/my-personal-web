@@ -2,9 +2,9 @@
 
 nav {
     display: flex;
-    justify-content: flex;
     min-height: 10vh;
     align-items: center;
+    justify-content: space-between;
 }
 
 .mylogo {
@@ -14,7 +14,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    // width: 100%;
     cursor: pointer;
 }
 
@@ -34,7 +34,7 @@ nav {
 }
 
 .burger-menu-container {
-    display: flex;
+    display: none;
     flex-grow: 1;
     justify-content: flex-end;
     .burger-menu {
@@ -67,6 +67,7 @@ nav {
     }
 
     .burger-menu-container {
+        display: flex;
         .burger-menu {
             display: block;
             background-color: black;

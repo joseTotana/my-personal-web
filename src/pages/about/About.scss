@@ -78,12 +78,6 @@
         .my-skills-right {
             padding-right: 10%;
             padding-left: 10%;
-
-            @media all and (max-width: $large-mobile) {
-                img {
-                    width: 0;
-                }
-            }
         }
     }
 
