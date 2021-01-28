@@ -1,13 +1,14 @@
 import firebase from "firebase";
+require("dotenv").config();
 
 var firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyBjdQUz_xX_Xm47Us5fk6v649Yb4VmNWDA",
-  authDomain: "my-personal-web-6c856.firebaseapp.com",
-  databaseURL: "https://my-personal-web-6c856.firebaseio.com",
-  projectId: "my-personal-web-6c856",
-  storageBucket: "my-personal-web-6c856.appspot.com",
-  messagingSenderId: "825270418784",
-  appId: "1:825270418784:web:552f2a0503bcea3e547205",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGE_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 });
 
 var db = firebaseApp.database().ref("contacts");

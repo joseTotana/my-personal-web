@@ -7,6 +7,8 @@ import PropTypes from "prop-types";
 const NavMenu = ({ translate }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const burgerMenuClassName = "burger-menu";
+
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
     return () => {
@@ -14,8 +16,10 @@ const NavMenu = ({ translate }) => {
     };
   }, []);
 
-  const handleClickOutside = () => {
-    setMenuOpen(false);
+  const handleClickOutside = (e) => {
+    if (e.target.className !== burgerMenuClassName) {
+      setMenuOpen(false);
+    }
   };
 
   return (
@@ -45,8 +49,10 @@ const NavMenu = ({ translate }) => {
       </ul>
       <div className="burger-menu-container">
         <img
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="burger-menu"
+          onClick={() => {
+            setMenuOpen(!menuOpen);
+          }}
+          className={burgerMenuClassName}
           alt="Burger Menu"
           src={burgerMenu}
         />

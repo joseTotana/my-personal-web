@@ -16,9 +16,10 @@
     "my_story": "My story",
     "my_story_p1": "My name is Jose Martinez, I'm 37 and I'm a software developer.",
     "my_story_p2": "I'm working as a developer since 2007. I've worked for different companies, including large firms such as Capgemini. Besides, in 2019 I moved to UK to join AND Digital, company I'm working for since then.",
-    "my_story_p3": "Then, due to current travel restrictions, I would like to move back to Spain and work remotely from Murcia, my home town.",
+    "my_story_p3": "Fun fact about me: One night I was waiting for a friend to pick me up, then when he came and I was getting in the car I found out the driver wasn't him... After some screams from the driver I could convince her it was a mistake and I wasn't a thieve.",
+    "my_story_p4": "Then, due to current travel restrictions, I would like to move back to Spain and work remotely from Murcia, my home town.",
     "my_skills": "My skills",
-    "my_skills_p1": "I'm a full-stack programmer with a great knowledge of consulting and software development, especially focused on web and backend, with extensive experience in .Net and React. Also, in the last months I'm learning kotlin/android, platform in which I've already published 3 apps.",
+    "my_skills_p1": "I'm a full-stack programmer with a great knowledge of consulting and software development, especially focused on web and backend, with extensive experience in .Net and React. Also, in the last months I'm learning kotlin/android, platform in which I've already published 3 apps. Have a look at my ",
     "check_my_cv": "CHECK MY CV",
     "my_linkedin": "LINKEDIN JOSE MARTINEZ"
   },
@@ -45,6 +46,9 @@
       "message": "message",
       "button": "Send"
     },
-    "prefer": "If you prefer, you can also find me on"
-  }
+    "prefer": "If you prefer, you can also find me on",
+    "form_succesful": "Got it! Thank you, I'll answer as soon as posible.",
+    "form_error": "There was an unpexpected error. Please, try again later."
+  },
+  "footer": "by Jose Martinez. All rights reserved."
 }

@@ -18,4 +18,19 @@ body {
     min-height: 100%;
     max-width: 100%;
     overflow-x: hidden;
+
+    h1 {
+        font-weight: $header-font-weight;
+        font-size: $header-font-size-desktop;
+    }
+
+    p {
+        font-size: $text-font-size-desktop;
+    }
+    a,
+    u {
+        text-decoration: none;
+        color: inherit;
+        font-weight: bold;
+    }
 }

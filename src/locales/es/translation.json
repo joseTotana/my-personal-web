@@ -16,9 +16,10 @@
     "my_story": "Mi historia",
     "my_story_p1": "Mi nombre es Jose Martinez, tengo 37 años y soy programador de software",
     "my_story_p2": "Empecé a trabajar como programador en 2007. Desde entonces, he trabajado en varias compañías, incluyendo grandes consultoras como Capgemini. Además, en 2019 me mudé a Reindo Unido para unirme a AND Digital, empresa para la que trabajo desde entonces.",
-    "my_story_p3": "Ahora, debido a las actuales restricciones para viajar, me gustaría volver a España y trabajar en remoto desde Murcia, mi ciudad natal.",
+    "my_story_p3": "Fun fact sobre mí: Una noche estaba esperando a un amigo para que me recogiera, cuando llegó su coche y estaba entrando me di cuenta de que el conductor no era él, después de algunos gritos pude convencer a la conductora de que todo había sido un malentendido y que no era un ladrón.",
+    "my_story_p4": "Ahora, debido a las actuales restricciones para viajar, me gustaría volver a España y trabajar en remoto desde Murcia, mi ciudad natal.",
     "my_skills": "Mis habilidades",
-    "my_skills_p1": "Soy programador full-stack, con un gran conocimiento de la consultoría y el desarrollo de software, centrado, especialmente, en web y backend, con amplia experiencia en .Net y React. Además, en los últimos meses estoy aprendiendo kotlin/android, plataforma en la que ya he publicado 3 apps.",
+    "my_skills_p1": "Soy programador full-stack, con un gran conocimiento de la consultoría y el desarrollo de software, centrado, especialmente, en web y backend, con amplia experiencia en .Net y React. Además, en los últimos meses estoy aprendiendo kotlin/android, plataforma en la que ya he publicado 3 apps. ¡Echa un vistazo a mi ",
     "check_my_cv": "CONSULTA MI CURRÍCULUM",
     "my_linkedin": "LINKEDIN JOSE MARTINEZ"
   },
@@ -45,6 +46,9 @@
       "message": "mensaje",
       "button": "Enviar"
     },
-    "prefer": "Si lo prefieres, también puedes encontrarme en"
-  }
+    "prefer": "Si lo prefieres, también puedes encontrarme en",
+    "form_succesful": "¡Recibido! Muchas gracias, te responderé lo antes posible.",
+    "form_error": "Se produjo un error, por favor, inténtalo más tarde."
+  },
+  "footer": "por Jose Martinez. Todos los derechos reservados."
 }
