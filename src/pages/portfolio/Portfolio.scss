@@ -6,6 +6,10 @@
     align-items: center;
     padding-bottom: 2.5rem;
 
+    @media all and (max-width: $large-mobile) {
+        margin-bottom: 3%;
+    }
+
     .portfolio-description {
         margin: 5%;
     }

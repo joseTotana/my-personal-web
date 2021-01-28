@@ -6,14 +6,13 @@ import LinkedinLogo from "../../assets/li-logo.png";
 import MailIcon from "../../assets/mail.svg";
 import { linkedinProfile, contactMail } from "../../utils/constants";
 
-const Contact = ({ translate, currentLanguage }) => {
+const Contact = ({ translate }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  console.log("lamguage", currentLanguage);
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -107,7 +106,6 @@ const Contact = ({ translate, currentLanguage }) => {
 
 Contact.propTypes = {
   translate: PropTypes.func,
-  currentLanguage: PropTypes.string,
 };
 
 export default Contact;
