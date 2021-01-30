@@ -4,7 +4,7 @@ import burgerMenu from "../../assets/menu.svg";
 import myLogo from "../../assets/mylogo.png";
 import PropTypes from "prop-types";
 
-const NavMenu = ({ translate }) => {
+const NavMenu = ({ translate, Link }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const burgerMenuClassName = "burger-menu";
@@ -24,9 +24,9 @@ const NavMenu = ({ translate }) => {
 
   return (
     <nav>
-      <a href="/">
+      <Link to="/">
         <img className="mylogo" alt="My Logo" src={myLogo} />
-      </a>
+      </Link>
 
       <ul
         className="nav-links"
@@ -35,16 +35,16 @@ const NavMenu = ({ translate }) => {
         }}
       >
         <li>
-          <a href="/">{translate("home.header_menu.home")}</a>
+          <Link to="/">{translate("home.header_menu.home")}</Link>
         </li>
         <li>
-          <a href="/about">{translate("home.header_menu.about_me")}</a>
+          <Link to="/about">{translate("home.header_menu.about_me")}</Link>
         </li>
         <li>
-          <a href="/portfolio">{translate("home.header_menu.portfolio")}</a>
+          <Link to="/portfolio">{translate("home.header_menu.portfolio")}</Link>
         </li>
         <li>
-          <a href="/contact">{translate("home.header_menu.contact")}</a>
+          <Link to="/contact">{translate("home.header_menu.contact")}</Link>
         </li>
       </ul>
       <div className="burger-menu-container">
@@ -63,6 +63,7 @@ const NavMenu = ({ translate }) => {
 
 NavMenu.propTypes = {
   translate: PropTypes.func,
+  Link: PropTypes.object,
 };
 
 export default NavMenu;
