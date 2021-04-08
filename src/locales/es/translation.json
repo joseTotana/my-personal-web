@@ -34,6 +34,9 @@
     },
     "cardTheEdit": {
       "desc": "The Edit shop webview app"
+    },
+    "cardChatbot": {
+      "desc": "Chatbot desarrollado en Next.js"
     }
   },
   "contact": {

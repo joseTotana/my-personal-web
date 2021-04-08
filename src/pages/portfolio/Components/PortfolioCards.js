@@ -2,6 +2,7 @@ import React from "react";
 import weatherIcon from "../../../assets/portfolio-cards/totanaweather.png";
 import businessIcon from "../../../assets/portfolio-cards/totanabusiness.png";
 import theEditIcon from "../../../assets/portfolio-cards/theedit.png";
+import chatbotIcon from "../../../assets/portfolio-cards/chatbot.png";
 import Figure from "react-bootstrap/Figure";
 import PropTypes from "prop-types";
 import {
@@ -11,6 +12,8 @@ import {
   weatherAppLink,
   businessAppLink,
   theEditAppLink,
+  nextChatbotLink,
+  nextChatbot,
 } from "../../../utils/constants";
 
 const PortfolioCards = ({ translate, cardName }) => {
@@ -35,6 +38,12 @@ const PortfolioCards = ({ translate, cardName }) => {
       card_icon = theEditIcon;
       card_link = theEditAppLink;
       classNameBluePointer = "blue-pointer";
+      break;
+    case nextChatbot:
+      card_description = card_description.concat("cardChatbot.");
+      card_icon = chatbotIcon;
+      card_link = nextChatbotLink;
+      break;
   }
 
   return (

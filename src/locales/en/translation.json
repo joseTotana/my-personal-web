@@ -34,6 +34,9 @@
     },
     "cardTheEdit": {
       "desc": "The Edit shop webview app"
+    },
+    "cardChatbot": {
+      "desc": "Next.js Chatbot"
     }
   },
   "contact": {
