@@ -15,4 +15,3 @@ Home.propTypes = {
   translate: PropTypes.func,
 };
 export default Home;
-joseMartinezDev;
