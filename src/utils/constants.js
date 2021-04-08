@@ -13,12 +13,14 @@ export const androidTechs = "Kotlin | Android Studio | React Native | Visual Stu
 export const weatherApp = "WEATHER_APP";
 export const businessApp = "BUSINESS_APP";
 export const theEditApp = "THEEDIT_APP";
+export const nextChatbot = "NEXT_CHATBOT";
 
 export const weatherAppLink =
   "https://play.google.com/store/apps/details?id=com.app.totana_weather_app";
 export const businessAppLink =
   "https://play.google.com/store/apps/details?id=com.josetotana.totanabusiness";
 export const theEditAppLink = "https://play.google.com/store/apps/details?id=com.josemdev.theedit";
+export const nextChatbotLink = "https://next-chatbot.vercel.app/";
 
 ////////////////// breakpoints
 export const mobileBreakpoint = "768px";
