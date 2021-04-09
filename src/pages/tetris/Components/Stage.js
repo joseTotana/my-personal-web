@@ -10,7 +10,7 @@ const Stage = ({ stage }) => (
 );
 
 Stage.propTypes = {
-  stage: PropTypes.object,
+  stage: PropTypes.array,
 };
 
 export default Stage;
