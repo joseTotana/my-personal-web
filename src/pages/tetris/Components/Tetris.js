@@ -8,6 +8,7 @@ import { StyledTetrisWrapper, StyledTetris } from "./styles/StyledTetris";
 // Custom Hooks
 import { usePlayer } from "../hooks/usePlayer";
 import { useStage } from "../hooks/useStage";
+import { useInterval } from "../hooks/useInterval";
 
 // Components
 import Stage from "./Stage";
@@ -15,7 +16,7 @@ import Display from "./Display";
 import StartButton from "./StartButton";
 
 const Tetris = () => {
-  //   const [null, setDropTime] = useState(null);
+  const [dropTime, setDropTime] = useState(null);
   const [gameOver, setGameOver] = useState(false);
 
   const [player, updatePlayerPos, resetPlayer, playerRotate] = usePlayer();
@@ -32,6 +33,7 @@ const Tetris = () => {
   const startGame = () => {
     // Reset everything
     setStage(createStage());
+    setDropTime(1000);
     resetPlayer();
     setGameOver(false);
   };
@@ -50,26 +52,44 @@ const Tetris = () => {
     }
   };
 
+  const keyUp = ({ keyCode }) => {
+    if (!gameOver) {
+      if (keyCode === 40) {
+        setDropTime(1000);
+      }
+    }
+  };
   const dropPlayer = () => {
+    setDropTime(null);
     drop();
   };
 
-  const move = ({ keyCode }) => {
+  const move = (e) => {
+    e.preventDefault();
     if (!gameOver) {
-      if (keyCode === 37) {
+      if (e.keyCode === 37) {
         movePlayer(-1);
-      } else if (keyCode === 39) {
+      } else if (e.keyCode === 39) {
         movePlayer(1);
-      } else if (keyCode === 40) {
+      } else if (e.keyCode === 40) {
         dropPlayer();
-      } else if (keyCode === 38) {
+      } else if (e.keyCode === 38) {
         playerRotate(stage, 1);
       }
     }
   };
 
+  useInterval(() => {
+    drop();
+  }, dropTime);
+
   return (
-    <StyledTetrisWrapper role="button" tabIndex="0" onKeyDown={(e) => move(e)}>
+    <StyledTetrisWrapper
+      role="button"
+      tabIndex="0"
+      onKeyDown={(e) => move(e)}
+      onKeyUp={(e) => keyUp(e)}
+    >
       <StyledTetris>
         <Stage stage={stage} />
         <aside>
