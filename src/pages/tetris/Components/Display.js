@@ -5,7 +5,7 @@ import { StyledDisplay } from "./styles/StyledDisplay";
 const Display = ({ gameOver, text }) => <StyledDisplay gameOver={gameOver}>{text}</StyledDisplay>;
 
 Display.propTypes = {
-  gameOver: PropTypes.string,
+  gameOver: PropTypes.bool,
   text: PropTypes.string,
 };
 
