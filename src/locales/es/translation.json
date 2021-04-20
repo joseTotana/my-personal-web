@@ -37,6 +37,9 @@
     },
     "cardChatbot": {
       "desc": "Chatbot desarrollado en Next.js"
+    },
+    "cardTetris": {
+      "desc": "Tetris desarrollado en React"
     }
   },
   "contact": {
