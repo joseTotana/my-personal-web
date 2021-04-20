@@ -7,8 +7,8 @@ grid-template-columns: repeat(${(props) => props.width}, 1fr);
 grid-gap: 1px;
 border: 2px solid #333;
 width: 100%;
-max-width: 30vw;
-@media (max-width: 800px) {
+max-width: 25vw;
+@media (max-width: 1000px) {
     max-width: 35vw;
   }
 background: #111;
