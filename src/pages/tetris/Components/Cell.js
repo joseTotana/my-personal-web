@@ -9,4 +9,4 @@ Cell.propTypes = {
   type: PropTypes.string,
 };
 
-export default Cell;
+export default React.memo(Cell);

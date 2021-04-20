@@ -7,11 +7,10 @@ export const useStage = (player, resetPlayer) => {
 
   useEffect(() => {
     setRowsCleared(0);
-
     const sweepRows = (newStage) =>
       newStage.reduce((ack, row) => {
         if (row.findIndex((cell) => cell[0] === 0) === -1) {
-          setRowsCleared((prev) => prev++);
+          setRowsCleared((prev) => prev + 1);
           ack.unshift(new Array(newStage[0].length).fill([0, "clear"]));
           return ack;
         }
@@ -36,17 +35,17 @@ export const useStage = (player, resetPlayer) => {
           }
         });
       });
-      // Then check if we collided
+      // Then check if we got some score if collided
       if (player.collided) {
         resetPlayer();
         return sweepRows(newStage);
       }
-
       return newStage;
     };
 
+    // Here are the updates
     setStage((prev) => updateStage(prev));
-  }, [player, resetPlayer]);
+  }, [player.collided, player.pos.x, player.pos.y, player.tetromino, resetPlayer]);
 
-  return [stage, setStage, rowsCleared];
+  return [stage, setStage, rowsCleared / 2];
 };
