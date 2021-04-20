@@ -1,10 +1,11 @@
 import React, { Suspense } from "react";
-import { Home, About, Portfolio, Contact, TetrisPage } from "./pages";
+import { Home, About, Portfolio, Contact } from "./pages";
 import i18n from "./i18n";
 import { withTranslation } from "react-i18next";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Header, Footer, NavMenu } from "./components";
 import { useTranslation } from "react-i18next";
+import TetrisPage from "./pages/tetris/TetrisPage";
 
 function App() {
   const changeLanguage = (lng) => {
@@ -23,9 +24,11 @@ function App() {
         <Switch>
           <Route path="/" exact render={() => <Home {...props} />} />
           <Route path="/about" render={() => <About {...props} />} />
-          <Route path="/portfolio" render={() => <Portfolio {...props} />} />
+          <Route path="/portfolio">
+            <Route exact path="/portfolio" render={() => <Portfolio {...props} />} />
+            <Route path="/portfolio/tetris" render={() => <TetrisPage {...props} />} />
+          </Route>
           <Route path="/contact" render={() => <Contact {...props} />} />
-          <Route path="/tetris" render={() => <TetrisPage {...props} />} />
         </Switch>
       </Router>
       <Footer {...props} />

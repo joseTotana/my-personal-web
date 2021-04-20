@@ -3,6 +3,7 @@ import weatherIcon from "../../../assets/portfolio-cards/totanaweather.png";
 import businessIcon from "../../../assets/portfolio-cards/totanabusiness.png";
 import theEditIcon from "../../../assets/portfolio-cards/theedit.png";
 import chatbotIcon from "../../../assets/portfolio-cards/chatbot.png";
+import tetrisIcon from "../../../assets/portfolio-cards/tetris.png";
 import Figure from "react-bootstrap/Figure";
 import PropTypes from "prop-types";
 import {
@@ -14,6 +15,8 @@ import {
   theEditAppLink,
   nextChatbotLink,
   nextChatbot,
+  tetrisGame,
+  tetrisGameLink,
 } from "../../../utils/constants";
 
 const PortfolioCards = ({ translate, cardName }) => {
@@ -44,11 +47,16 @@ const PortfolioCards = ({ translate, cardName }) => {
       card_icon = chatbotIcon;
       card_link = nextChatbotLink;
       break;
+    case tetrisGame:
+      card_description = card_description.concat("cardTetris.");
+      card_icon = tetrisIcon;
+      card_link = tetrisGameLink;
+      break;
   }
 
   return (
     <article className="portfolio-card-container">
-      <a className="portfolio-card-link" target="_blank" rel="noreferrer" href={card_link}>
+      <a className="portfolio-card-link" target="_self" rel="noreferrer" href={card_link}>
         <Figure className={classNameBluePointer}>
           <Figure.Image className="portfolio-card-image" alt={`${cardName} icon`} src={card_icon} />
           <Figure.Caption className="portfolio-card-caption">

@@ -37,6 +37,9 @@
     },
     "cardChatbot": {
       "desc": "Next.js Chatbot"
+    },
+    "cardTetris": {
+      "desc": "Tetris game in React"
     }
   },
   "contact": {

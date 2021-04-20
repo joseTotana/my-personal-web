@@ -4,10 +4,7 @@ import Tetris from "./Components/Tetris";
 const TetrisPage = () => {
   return (
     <section className="tetris-section">
-      <div>
-        TETRIS
-        <Tetris />
-      </div>
+      <Tetris />
     </section>
   );
 };
