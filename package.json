@@ -21,7 +21,7 @@
     "react-i18next": "^11.7.3",
     "react-responsive": "^8.1.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
+    "react-scripts": "5.0.1",
     "react-typist": "^2.0.5",
     "react-typist-loop": "0.0.5",
     "sass": "^1.29.0",
